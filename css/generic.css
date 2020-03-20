@@ -1,0 +1,285 @@
+/* 版面變動快速設定 */
+:root {
+  /* 宣告Menu的大選項數量 */
+  --MenuDropdownCount: 4;
+  /* 宣告標題ICON*/
+  --TitleIcon: url("../img/icon/bestselect.png")
+}
+
+/* 電腦版 */
+@media screen {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Regular", "PingFangTC-Regular", "Microsoft JhengHei";
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* 超連結 */
+  .tootherpage {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav {
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 30px 0 rgba(229, 229, 229, 0.70);
+  }
+
+  /* logo標誌位置 */
+  nav #IndexLogoPosition {
+    margin: 0 10px;
+    width: 25vw;
+    min-width: 120px;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* logo圖片 */
+  nav #IndexLogoPosition a #IndexLogoImage {
+    min-width: 120px;
+    max-width: 20vw;
+    max-height: 10vh;
+  }
+
+  /* nav選項區域 */
+  #IndexMenu {
+    width: 60vw;    
+    height: 100%;
+  }
+
+  /* nav Menu */
+  .MenuItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Menu選項與特效 */
+  .MenuDropdown {
+    width: calc(100%/var(--MenuDropdownCount));
+    height: 100%;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .MenuDropdown>a span {
+    transition: all 0.5s;
+  }
+
+  .MenuDropdown:hover>a span {
+    opacity: 0;
+    transform: translate(0px, 40px);
+  }
+
+  .MenuDropdown::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translate(-30%, -50%) rotate(-30deg);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+
+  .MenuDropdown:hover::after {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  /* 投影片 */
+  #banner {
+    width: 90vw;
+    max-height: 94vh;
+    background-color: #F5F5F5;
+  }
+
+  .sliderimgs {
+    max-width: 90vw;
+    max-height: 94vh;
+  }
+
+
+  /* 底頁 */
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(112, 112, 112, 0.8);
+
+  }
+
+  /* 底頁連結 */
+  footer .FooterLink {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 5%;
+  }
+
+  footer .FooterLink ul li {
+    font-size: 1em;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  footer .FooterLink ul li:before {
+    content: "|";
+    display: inline-block;
+    color: #FFFFFF;
+    margin: -2px 19px 0 15px;
+    letter-spacing: -1px;
+  }
+
+  footer .FooterLink ul li:nth-last-child(1):after {
+    content: "|";
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 0 15px;
+    letter-spacing: -1px;
+  }
+
+  footer p {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 0.5em;
+    padding: 1vh 1vw;
+  }
+
+  /* 外連結 */
+  .FixedBall {
+    content: '';
+    position: fixed;
+    z-index: 2;
+    bottom: 2vh;
+    right: 2vw;
+    width: 8vh;
+    height: 8vh;
+    background-image: url("../img/icon/facebookicon.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 999px;
+    cursor: pointer;
+    -webkit-animation: box .8s infinite;
+    animation-iteration-count: 5;
+  }
+
+  .FixedBall:hover {
+    -webkit-animation: box .8s infinite;
+  }
+
+  @-webkit-keyframes box {
+    0% {
+      bottom: 2vh;
+    }
+
+    50% {
+      bottom: 4vh;
+    }
+
+    100% {
+      bottom: 6vh;
+    }
+  }
+}
+
+/*適用螢幕寬度小於480px的裝置（當螢幕小於480px時）*/
+@media screen and (max-width:480px) {
+  /* #IndexMenu{
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(112, 112, 112, 0.8);
+  } */
+  .MenuItem{
+    width: 75vw;
+    height: 50vh;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #IndexMenu .hide_on_bush{
+    display: none;
+  }
+  .MenuDropdown{
+    width: 100%;
+  }
+  .hamburger {
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    top:4vh;
+    left: 40vw;
+  }  
+  .hamburger .line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #9a9a9a;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }  
+  #hamburger-1.active .line:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+  }
+  #hamburger-1.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger-1.active .line:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+  }  
+}

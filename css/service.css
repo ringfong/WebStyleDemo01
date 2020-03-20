@@ -1,0 +1,139 @@
+/* 電腦版 */
+@media screen{
+body{
+  background-color: #93a5cf;
+}
+main{
+  margin-top: 12vh;
+  width: 96%;
+  padding : 0 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+/* 切換列 */
+.ServiceMenu{
+  width: 20%;
+  min-width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  margin: 3vh 0;
+}
+/* 切換物件 */
+.ServiceMenuItem{  
+  width: 160px;
+  height: 200px;
+  background-color: #FFF;
+  margin: 5px 0;
+  overflow:hidden;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* 圖片放大動畫 */
+.ServiceMenuItem img{transform:scale(1,1);transition: all 1s ease-out;}
+.ServiceMenuItem img:hover{transform:scale(1.2,1.2);}
+/* 物件圖片(高>寬) */
+.ServiceMenuItemPhotoH{
+  width: 100%; 
+  border-radius: 5px;
+}
+/* 物件圖片(寬>高) */
+.ServiceMenuItemPhotoW{
+  height: 100%; 
+  border-radius: 5px;
+}
+/* 物件文字 */
+.ServiceMenuItemText{
+  width: 160px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.6);;
+  color: #000000;
+  position: absolute;
+  top: 160px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 5px 5px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* 介紹主頁 */
+.ServiceIntroduction{
+  width: 66%;
+  min-width: 340px;
+  min-height: 76vh;
+  margin: 3vh 0;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* 介紹左區域 */
+.IntroductionLeftArea{
+  width: 45%;
+  min-width: 320px;
+  height: 98%;
+  min-height: 76vh;
+  margin: 2vh 0;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+/* 介紹右區域 */
+.IntroductionRightArea{
+  width: 45%;
+  min-width: 320px;
+  height: 98%;
+  min-height: 76vh;
+  margin: 2vh 0;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+/* 項目 */
+.ServiceIntroduction h2{
+  font-size: 3em;
+  font-weight: 700px;
+  line-height: 35px;
+  border-left: 5px #108366 double;
+  padding-left: 15px;
+  color: #108366;
+}
+/* 內文 */
+.ServiceIntroduction p{
+  font-size: 1em;
+  line-height: 28px;
+  margin: 0 0 10px;
+  word-wrap: break-word;
+}
+/* 圖片 */
+.IntroductionPhoto{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+
+}
+/*適用螢幕寬度小於480px的裝置（當螢幕小於480px時）*/
+@media screen and (max-width:480px){
+
+
+
+}

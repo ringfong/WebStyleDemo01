@@ -1,0 +1,119 @@
+main{
+  width: 90%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-direction: row;
+  padding: 2vh 5%;
+}
+/* 服務項目標題 */
+.ServiceTitle{
+  width: 95%;
+  height: 10vh;
+  font-size: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+  margin-top: 14vh;
+  margin-left: 5%;  
+}
+/* 服務項目標題icon */
+.ServiceTitle .TitleIcon{
+  width: 8vh;
+  height: 8vh;
+  background-image: var(--TitleIcon);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin: 1vw;
+}
+
+/* 背景 */
+.PBackground{
+  width: 30%;
+  min-width: 320px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 1%;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  box-shadow: 8px 8px rgba(200,200,200,0.5);
+  border-radius: 5px;
+}
+/* 圖片背景 */
+.PPhoto{
+  width: 150px;
+  height: 230px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 圖片 */
+.PPhotoImg{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+/* 姓名 */
+.PName{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.PName span:first-child{
+  font-size: 2em;
+}
+.PName span:last-child{
+  font-size: 1em;
+}
+/* 資訊欄 */
+.PInfo{
+  width: 96%;
+  height: 270px;
+  padding: 5px 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+/* 主治項目 */
+.PProject, .PExperience{
+  width: 45%;
+  height: 100%;
+}
+/* 主治項目標題 */
+.PProject p, .PExperience p{
+  margin: 0px; padding: 0px;
+  margin-bottom: 5px;  
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* 主治項目內容 */
+.PProject ul li, .PExperience ul li{    
+  width: 85%;
+  margin-left: 15%;
+  font-size: 1em;  
+}
+.PProject ul , .PExperience ul {    
+  margin: 0px; padding: 0px;  
+}

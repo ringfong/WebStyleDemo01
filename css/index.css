@@ -1,0 +1,440 @@
+/* 版面變動快速設定 */
+:root {
+  /* 宣告Menu的大選項數量 */
+  --MenuDropdownCount: 4;
+  /* 宣告標題ICON*/
+  --TitleIcon: url("../img/icon/bestselect.png")
+}
+
+
+/* 電腦版 */
+@media screen{
+/* 主頁面 */
+main{
+  width: 100%;
+}
+/* 關於診所 */
+main .AboutusBackground{
+  position: relative;
+  width: 96%;
+  min-height: 60vh;
+  background-image: linear-gradient(135deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -moz-linear-gradient(135deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -webkit-linear-gradient(135deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -o-linear-gradient(135deg, #F5F5F5 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 2%;
+}
+/* 關於診所 */
+main .AboutusBackground .AboutusControl{
+  position: relative;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 15%;
+}
+/* 連結按鍵 */
+main .AboutusBackground .AboutusControl .AboutusLink{  
+  width: 15vh;
+  height: 15vh;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  color: #939393;
+  border: 2px solid #939393;
+  font-size: 24px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-image: url("../img/icon/blackrightarrow.png");
+  background-size: 50%;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+main .AboutusBackground .AboutusControl .AboutusLink:before {
+  content: "";
+  background-color: rgba(255,255,255,0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+main .AboutusBackground .AboutusControl .AboutusLink:hover {
+  width: 18vh;
+  height: 18vh;
+  background-color: #939393;
+  color: #fff;
+  border-bottom: 4px solid darken(#939393, 10%);
+  background-image: url("../img/icon/whiterightarrow.png");
+  background-size: 50%;
+  background-repeat:no-repeat;
+  background-position: center;
+} 
+main .AboutusBackground .AboutusControl .AboutusLink:hover:before {
+  transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+}
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+/* 文字顯示區域 */
+main .AboutusBackground .AboutusControl .AboutusTextArea{
+  margin-right: 2%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* 文字大 */
+main .AboutusBackground .AboutusControl .AboutusTextArea .AboutusText1{
+  height: 12vh;
+  font-size: 4em;
+  font-weight: 800;
+  font-family: "Roboto-Regular", "PingFangTC-Regular", "Microsoft JhengHei";
+  white-space:nowrap;
+}
+/* 文字小 */
+main .AboutusBackground .AboutusControl .AboutusTextArea .AboutusText2{
+  margin-top: 2vh;
+  width: 80%;
+  height: 6vh;
+  font-size: 1em;
+  word-wrap:break-word;
+}
+/* 照片顯示區域 */
+main .AboutusBackground .AboutusPhotoarea{
+  position: relative;
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* 照片背景 */
+main .AboutusBackground .AboutusPhotoarea .AboutusPhotoBackground{
+  width: 360px;
+  height: 270px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 20px 20px;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(200,200,200,0.8);
+}
+/* 照片 */
+main .AboutusBackground .AboutusPhotoarea .AboutusPhotoBackground .AboutusPhoto{
+  max-width: 320px;
+  max-height: 240px;
+}
+/* 表格 */
+main .AboutusBackground .AboutusPhotoarea .AboutusTable{
+  width: 540px;
+  height: 220px;
+  text-align: center;
+  border-collapse:collapse;
+  border-spacing: 0;
+  border: 0;
+  font-size: 14px;
+  color: #1C1C1C;
+  border-radius: 5px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+thead tr{
+  background-color: #979797;
+}
+th, td{
+  width: 9%;
+  border-bottom:1px #979797 solid;
+  padding: 0;
+}
+th{
+  background-color: #eaeaea;
+  border-bottom: none;
+  box-sizing: border-box;
+  padding: 3% 0;
+}
+tfoot tr td{
+  border-bottom: 0 ;
+}
+th:first-child, td:first-child{
+  width: 27%;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* 關於診所文字樣式 */
+main .AboutusBackground .AboutusPhotoarea .AboutusPhotoText{
+  width: 360px;
+  height: 270px;  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  margin: 20px 20px;
+  padding: 20px;
+  word-wrap:break-word;
+  word-break: break-all; 
+}
+
+/* 服務項目 */
+main .ServiceSection{
+  width: 84%;
+  height: auto;
+  padding: 2vh 8%;
+  background-image: linear-gradient(225deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -moz-linear-gradient(225deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -webkit-linear-gradient(225deg, #F5F5F5 0%, #c3cfe2 100%);
+  background: -o-linear-gradient(225deg, #F5F5F5 0%, #c3cfe2 100%);
+}
+/* 服務項目標題 */
+.ServiceTitle{
+  width: 100%;
+  height: 10vh;
+  font-size: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* 服務項目標題icon */
+.ServiceTitle .TitleIcon{
+  width: 8vh;
+  height: 8vh;
+  background-image: var(--TitleIcon);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin: 1vw;
+}
+/* 服務項目內容 */
+main .ServiceSection .ServiceContent{
+  width: 100%;
+  margin: 5vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+main .ServiceSection .ServiceContent .ServiceContentArea{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+/* 普通型卡片 */
+main .ServiceSection .ServiceContent .ServiceNormalcard{
+  width: 260px;
+  height: 260px;
+  margin: 20px 20px;
+  padding: 10px;
+}
+/* 卡片外框通用 */
+.flip-container {
+  perspective: 1000;
+}
+/*hover翻轉*/
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+  width: 260px;
+  height: 260px;  
+  float: left;
+}
+/*卡片陰影*/
+.front, .back {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 5px;  
+}
+/* 翻轉速度 */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  cursor: pointer;
+}
+.back {
+  transform: rotateY(180deg);
+  background-image: linear-gradient(to top, #e3eeff 0%, #f3e7e9 100%);
+  overflow:auto;
+  cursor: pointer;
+}
+/* 卡片圖片 */
+.front .CardFrontImg{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+/* 卡片大字體(前) */
+.front .CardFrontText{
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(192, 192, 192, 0.8);
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2em;
+  z-index: 3;
+  border-radius: 0 0 5px 5px;
+  padding: 0 5%;
+}
+/* 卡片大字體(後) */
+.back .CardBackText{
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2em;
+  border-radius: 5px 5px 0 0;
+  padding: 0 5%;
+}
+/* 卡片說明(後) */
+.back .CardBackText2{
+  width: 90%;
+  height: 70%;
+  position: relative;
+  color: #5A5A5A;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1em;
+  border-radius: 5px 5px 0 0;
+  padding: 5% 5%;
+  margin-top: 20%;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* 聯絡我們頁面 */
+main .ContactusSection{
+  width: 84%;
+  padding: 5vh 8%;
+  display: flex;  
+  flex-direction: column;
+}
+main .ContactusContent{
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Google套件 */
+main .ContactusSection .GoogleAPI{
+  width: 40%;
+  min-width: 320px;
+  height: 85vh;
+  min-height: 540px;
+  border-radius: 20px;
+  margin: 5vh 5%;
+  box-shadow: 10px 10px 10px 10px rgba(200,200,200,0.8);
+}
+/* 地圖網頁 */
+main .ContactusSection .GoogleAPI .MapIframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* 地圖文字說明區域 */
+main .ContactusSection .GoogleAPI .MapTextArea{
+  display: none;
+  width: 90%;
+  height: 28%;
+  border-radius: 0 0 20px 20px;
+  background-color: #4286F3;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1% 5%;
+}
+/* 大字體 */
+main .ContactusSection .GoogleAPI .MapTextArea .MapText1{
+  width: 100%;
+  font-size: 2em;
+  height: 25%;
+  color: #FFFFFF;
+  margin: 2% 0;
+  font-weight: 600;
+}
+/* 小字體 */
+main .ContactusSection .GoogleAPI .MapTextArea .MapText2{
+  font-size: 1em;
+  width: 100%;
+  height: 20%;
+  color: #FFFFFF;
+  margin: 1% 0;
+  display: flex;
+  align-items: center;
+}
+/* icon */
+.MapTextIcon{
+  max-height: 80%;
+  margin-right: 3%;
+}
+
+/* 表單網頁 */
+main .ContactusSection .GoogleAPI .FormIframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;  
+}
+}
+
+
+
+
+/*適用螢幕寬度小於480px的裝置（當螢幕小於480px時）*/
+@media screen and (max-width:480px){
+  /* 手機板調整投影片 */
+  #banner{
+    margin-top: 14vh;
+  }
+
+}

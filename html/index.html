@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁 | 示意網頁</title>
+<!-- CSS -->
+  <link rel="stylesheet" href="../css/flexslider.css">  
+  <link rel="stylesheet" href="../css/generic.css">
+  <link rel="stylesheet" href="../css/index.css">  
+</head>
+<body>
+  <!-- nav start -->
+  <nav>
+    <div id="IndexLogoPosition">
+      <a href="index.html">
+        <img src="../img/logo.png" alt="logo" id="IndexLogoImage">
+      </a>
+    </div>
+    <div id="IndexMenu">
+      <!-- MenuLink start -->
+      <ul class="MenuItem hide_on_bush">
+        <li id="toservice" class="MenuDropdown" data-text="Service">
+          <span>服務項目</span>
+        </li>
+        <li id="toteam" class="MenuDropdown" data-text="Team">
+          <span>專業團隊</span>
+        </li>
+        <li id="toaboutus" class="MenuDropdown" data-text="About Us">
+          <span>關於診所</span>
+        </li>        
+        <li class="MenuDropdown toIndexContactus" data-text="Contact">
+          <span>聯絡我們</span>        
+        </li>        
+      </ul>
+      <!-- MenuLink end -->
+      <div id="hamburger-1" class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>    
+  </nav>
+  <!-- nav end -->
+  <!-- banner start -->
+  <div id="banner" class="flexslider">
+    <!-- Slideshow start -->
+    <ul class="slides">
+      <li class="sliderimgs">
+        <img src="../img/datsumou1181_TP_V.jpg" />
+      </li>
+      <li class="sliderimgs">
+        <img src="../img/datsumou1187_TP_V.jpg" />
+      </li>
+      <li class="sliderimgs">
+        <img src="../img/datumouFTHG7969_TP_V.jpg" />
+      </li>
+      <li class="sliderimgs">
+        <img src="../img/dmFTHG7836_TP_V.jpg" />
+      </li>
+    </ul>
+    <!-- Slideshow end -->
+  </div>
+  <!-- banner end -->
+  <main>
+    <!-- 關於診所 -->
+    <div class="AboutusBackground">
+      <div class="AboutusControl">
+        <div class="AboutusLink"></div>
+        <div class="AboutusTextArea">
+          <div class="AboutusText1">OX數位</div>
+          <div class="AboutusText2">了解更多我們的訊息</div>
+        </div>
+      </div>
+      <div class="AboutusPhotoarea">        
+        <table class="AboutusTable">
+          <thead>
+            <tr>
+              <th>服務時間</th>
+              <th>日</th>
+              <th>一</th>
+              <th>二</th>
+              <th>三</th>
+              <th>四</th>
+              <th>五</th>
+              <th>六</th>                
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>早</td>
+              <td>○</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+            </tr>
+            <tr>
+              <td>中</td>
+              <td>○</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+            </tr>
+            <tr>
+              <td>晚</td>
+              <td>○</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>○</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td  colspan="6">營業時間 : 一~五 9:30-21:00/六 10:00-17:30</td>
+              <td colspan="2">○&emsp;休診</td>
+            </tr>            
+          </tfoot>
+        </table>      
+        <div class="AboutusPhotoBackground">
+          <img src="../img/datumouFTHG7969_TP_V.jpg" class="AboutusPhoto" />
+        </div>
+        <div class="AboutusPhotoText">文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹</div>
+      </div>
+    </div>
+    <!-- 關於診所 end -->
+    <!-- 服務項目 -->
+    <section class="ServiceSection">
+      <div class="ServiceTitle">
+        <div class="TitleIcon"></div>
+        <span>服務項目</span>
+      </div>
+      <div class="ServiceContent">        
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor01.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div> 
+              <div class="CardBackText2">項目說明</div>             
+            </div>
+          </div>
+        </div>
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor02.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div> 
+              <div class="CardBackText2">項目說明</div>
+            </div>
+          </div>
+        </div>
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor03.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div>
+              <div class="CardBackText2">項目說明</div>
+            </div>
+          </div>
+        </div>        
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor04.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div> 
+              <div class="CardBackText2">項目說明</div>             
+            </div>
+          </div>
+        </div>        
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor05.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">              
+              <div class="CardBackText">項目</div>
+              <div class="CardBackText2">項目說明</div>
+            </div>
+          </div>
+        </div>
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor06.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div> 
+              <div class="CardBackText2">項目說明</div>             
+            </div>
+          </div>
+        </div>
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor07.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div>
+              <div class="CardBackText2">項目說明</div>
+            </div>
+          </div>
+        </div>        
+        <div class="ServiceNormalcard flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <div class="CardFrontText">項目</div>
+              <img src="../img/doctor08.jfif" alt="" class="CardFrontImg">
+            </div>
+            <div class="back">
+              <div class="CardBackText">項目</div>
+              <div class="CardBackText2">項目說明</div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- 服務項目end -->
+    <!-- 聯絡我們 -->
+    <section class="ContactusSection">      
+      <div class="ServiceTitle">
+        <div class="TitleIcon"></div>
+        <span>聯絡我們</span>
+      </div>
+      <div class="ContactusContent">
+        <!-- google地圖 -->
+        <div class="GoogleAPI">
+          <iframe class="MapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.1991765980147!2d121.55344721544684!3d25.027313844712456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa34bf914529%3A0x7ccb7e05537830b2!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5Z-66ZqG6Lev5LqM5q61MTY06Jmf5qiT5LmLMw!5e0!3m2!1szh-TW!2stw!4v1576207613818!5m2!1szh-TW!2stw" frameborder="0"></iframe>
+          <div class="MapTextArea">
+            <div class="MapText1">OX數位</div>
+            <hr style="width: 100%; background: #FFFFFF; margin: 1px 0;">
+            <div class="MapText2">
+              <img class="MapTextIcon" src="../img/icon/mapicon.png" alt="">
+              <span>地址地址地址地址地址地址地址地址</span>
+            </div>
+            <div class="MapText2">              
+              <img class="MapTextIcon" src="../img/icon/mailicon.png" alt="">
+              <span>信箱@信箱.信箱</span>
+            </div>
+            <div class="MapText2">
+              <img class="MapTextIcon" src="../img/icon/phoneicon.png" alt="">
+              <span>00-00000000</span>
+            </div>
+          </div>
+        </div>
+        <!-- google地圖 end -->
+        <!-- google表單 -->
+        <a id="IndexContactus"></a>
+        <div class="GoogleAPI">          
+          <iframe class="FormIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdOLJFYkcBEDghiU_YCtVrv0rIPk7Eo7y0mHjZ2v9AaIZIwyA/viewform?embedded=true" frameborder="0"></iframe>
+        </div>       
+        <!-- google表單 end -->
+      </div>      
+    </section>
+    <!-- 聯絡我們 end -->
+  </main>
+  <!-- footer start -->
+  <footer>
+    <div class="FooterLink">
+      <ul>
+        <li>服務項目</li>
+        <li>專業團隊</li>
+        <li>關於診所</li>
+        <li class="toIndexContactus">聯絡我們</li>
+      </ul>
+    </div>
+    <p>Copyright © 2019-2020 宇禾數位（股）FIADigital Co., LTD All Right Received. | 版權所有 © 宇禾數位（股）FIADigital Co., LTD</p>
+  </footer>
+  <!-- footer end -->
+  <!-- FB連結 -->  
+  <a class="tootherpage" href="https://www.facebook.com/fiadigitaltw/"><div class="FixedBall"></div></a>
+  
+  <!-- javascript -->
+  <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="../js/vue.js"></script>
+  <!-- javascript control -->
+  <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
